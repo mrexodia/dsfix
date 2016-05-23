@@ -50,7 +50,7 @@ using namespace std;
 #pragma region Useful Macros from DXUT (copy-pasted here as we prefer this to be as self-contained as possible)
 #if defined(DEBUG) || defined(_DEBUG)
 #ifndef V
-#define V(x) { hr = (x); if (FAILED(hr)) { DXTrace(__FILE__, (DWORD)__LINE__, hr, L#x, true); } }
+#define V(x) { hr = (x); if (FAILED(hr)) { DXTraceW(__FILE__, (DWORD)__LINE__, hr, L#x, true); } }
 #endif
 #ifndef V_RETURN
 #define V_RETURN(x) { hr = (x); if (FAILED(hr)) { return DXTrace(__FILE__, (DWORD)__LINE__, hr, L#x, true); } }
